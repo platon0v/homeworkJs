@@ -143,7 +143,82 @@
 //     table1();
 // }
 
-{
-    //Form
-    
-}
+// {
+//     //Form
+//     const createForm = (obj) => {
+//         let form = "<form>";
+//         for (let [key, value] of Object.entries(obj)) {
+//             let inputType = "text";
+//             if (typeof value === "text") {
+//                 inputType = "string";
+//             }
+//             else if (typeof value === "number") {
+//                 inputType = "number";
+//             }
+//             else if (typeof value === "boolean") {
+//                 inputType = "checkbox";
+//             }
+//             const checkedAttr = inputType === "checkbox" && value ? "checked" : "";
+//             form += `<label>${key}:<input type="${inputType}" name="${key}" value="${value}"${checkedAttr}/></label>`;
+//         }
+//         form += "</form>";
+//         document.querySelector("body").innerHTML += form;
+//     }
+//     const person = {
+//         name: "Dima",
+//         surname: "Platonov",
+//         age: 20,
+//         height: 191,
+//         weight: 80,
+//         beautiful: true
+//     }
+
+//     createForm(person);
+// }
+
+
+// {
+//     var persons1 = [
+//         { name: "Іван", age: 17 },
+//         { name: "Марія", age: 35 },
+//         { name: "Олексій", age: 73 },
+//         { name: "Яків", age: 12 },
+//       ];
+//       const sort = (arr, field, bollean = true) => {
+//         return arr.sort((a, b) => {
+//           const result = a[field] > b[field] ? 1 : a[field] < b[field] ? -1 : 0;
+//           return bollean ? result : -result;
+//         });
+//       };
+//       console.log(sort(persons1, "age"));
+// }
+
+// //Divide
+// {
+//   {   
+//     let str = `
+//     <input type='number' id="firstNumber" />
+//     <input type='number' id="secondNumber" />
+//     <div id="divisionResult">
+//         Що будемо ділити?
+//     </div>
+//     <script>
+//         const calcResult = () => {
+//             console.log(firstNumber.value, secondNumber.value, divisionResult.innerHTML)
+//             divisionResult.innerHTML = "Результатом поділу " + firstNumber.value + " НАЦІЛО на " + secondNumber.value + " буде число " + Math.floor(firstNumber.value/secondNumber.value)
+//         }        
+//         firstNumber.oninput = secondNumber.oninput = calcResult
+//     </script>`
+
+//     document.write(str)
+// }
+// }
+
+// {
+//   //calc func
+//   const calc = (salary, month, tax = 19.5 / 100) => salary * month * tax;
+//   alert(
+//     " Ваша сума податку складатиме: " +
+//     calc(prompt("Введіть сумму зарплати"), prompt("Введіть кількість місяців"))
+//   );
+// }
